@@ -12,12 +12,12 @@ Criar um sistema para integrar os dados dos Pets com os dados dos criadores e se
 - Gerenciar visibilidade dos dados do PET;
 
 ## Público alvo: 
-Tutores de pet, veterinários e clinicas, lojas de produto especializado para pet
+- Tutores de pet
+- Veterinários e clinicas
+- Lojas de produto especializado para pet
 
 ## Finalidade:
 Cria um sistema que gerencia a vida e saúde o PET, com dados médicos e histórico de cuidados, bem como a logística de produtos para os mesmos.
-
-## Estrutura de Dados:
 
 ## Cores do Projeto:
 - Azul
