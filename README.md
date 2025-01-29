@@ -1,11 +1,7 @@
 # Projeto Integrador: PetGuard (PG) 
-Orientador: Fabiano Moreira 
-Empresa: 
-
-## Integrantes: 
-
-## Descrição do projeto: 
 Criar um sistema para integrar os dados dos Pets com os dados dos criadores e seus prestadores de serviços;
+
+- Orientador: Fabiano Moreira 
 
 ## Funções do projeto:
 - Cadastrar dados do PET
