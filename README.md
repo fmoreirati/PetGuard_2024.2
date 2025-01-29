@@ -1,8 +1,6 @@
-# Projeto Integrador: FlexPetGuard (FPG) 
+# Projeto Integrador: PetGuard (PG) 
+Orientador: Fabiano Moreira 
 Empresa: 
-Coordenador: Fabiano Moreira 
-Projeto github: 
-Repositório: 
 
 ## Integrantes: 
 
