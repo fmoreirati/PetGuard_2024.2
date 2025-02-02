@@ -1,12 +1,18 @@
+/*normalize*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+/*font*/
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+/**/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 :root{
     /*cores*/
-    --lapisLazuli: #05668D;
-    --uclaBlue: #427AA1;
+    --azulUm: #05668D;
+    --azulDois: #427AA1;
+    --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --pear: #d6d84f;
+    --verde: #d6d84f;
+    
 
     /*font*/
     --ffamily: "Liter", serif;
@@ -14,3 +20,94 @@
     
 }
 
+html, body, #wrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: var(--ffamily);
+    font-size: var(--fweight);
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: var(--azulUm);
+    padding: 0.1rem;
+}
+
+header div{
+    display:flex;
+    align-items: center;
+}
+
+header img{
+    height: 3.5rem;
+    width: auto;
+    border-radius: 100%;
+    padding: 0.1rem;
+}
+
+header img:hover{
+    background-color: var(--azulTres);    
+}
+
+header a{
+    display: flex;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header h1{
+    margin-top: 1rem;
+}
+/*HEADER*/
+
+/*NAV*/
+nav{
+    background-color: var(--azulDois);
+}
+
+nav div a{
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+nav span{
+    font-weight: bold;
+}
+
+nav i{
+    margin-right: 1rem;
+}
+/*NAV*/
+
+/*MAIN*/
+main{
+    flex-grow: 1;
+    background-color: var(--white) ;
+}
+/*MAIN*/
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    background-color: var(--azulTres);
+}
+
+/*FOOTER*/
