@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
 /**/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
 :root{
     /*cores*/
     --azulUm: #05668D;
@@ -13,19 +14,18 @@
     --black: #071013;
     --verde: #d6d84f;
     
-
     /*font*/
     --ffamily: "Liter", serif;
-    --fweight: 400;
-    
+    --fsize: 
 }
+
 
 html, body, #wrap{
     position: relative;
     height: 100%;
     width: 100%;
     font-family: var(--ffamily);
-    font-size: var(--fweight);
+    
 }
 
 #wrap {
@@ -33,10 +33,7 @@ html, body, #wrap{
     flex-direction: column;
     margin: auto;
     width: 100%;
-    max-width: 1024px;
 }
-
-
 
 /*HEADER*/
 header{
@@ -44,7 +41,9 @@ header{
     justify-content: space-between;
     height: 5rem;
     background-color: var(--azulUm);
-    padding: 0.1rem;
+    padding: 1rem;
+    
+    
 }
 
 header div{
@@ -72,23 +71,43 @@ header a{
 header h1{
     margin-top: 1rem;
 }
+
+header span{
+    font-weight: bold;
+}
 /*HEADER*/
 
 /*NAV*/
 nav{
     background-color: var(--azulDois);
 }
+/*DEIXA NO CENTER (PARA NAO MOBILE)*/
+/*
+nav div{
+    display: flex;
+    justify-content: center;
+}
+*/
 
 nav div a{
+    /*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
+    /*
+    display: flex;
+    flex-direction: column;
+    */
     text-decoration: none;
     padding: 1rem;
     color: var(--black);
     margin-top: 1rem;
 }
 
-nav span{
-    font-weight: bold;
+/*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
+
+nav span{    
+    
+    font-weight: bold;font-weight: bold;
 }
+
 
 nav i{
     margin-right: 1rem;
