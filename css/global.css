@@ -81,30 +81,18 @@ header span{
 nav{
     background-color: var(--azulDois);
 }
-/*DEIXA NO CENTER (PARA NAO MOBILE)*/
-/*
-nav div{
-    display: flex;
-    justify-content: center;
-}
-*/
+
 
 nav div a{
-    /*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
-    /*
-    display: flex;
-    flex-direction: column;
-    */
     text-decoration: none;
     padding: 1rem;
     color: var(--black);
     margin-top: 1rem;
+
+    
 }
 
-/*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
-
 nav span{    
-    
     font-weight: bold;font-weight: bold;
 }
 
