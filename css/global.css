@@ -5,27 +5,30 @@
 /**/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
-:root{
+:root {
     /*cores*/
     --azulUm: #05668D;
     --azulDois: #427AA1;
     --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --verde: #d6d84f;
-    
+    --verde: #1b8654;
+    --verdeDois: #103900;
+
     /*font*/
     --ffamily: "Liter", serif;
-    --fsize: 
+    
 }
 
 
-html, body, #wrap{
+html,
+body,
+#wrap {
     position: relative;
     height: 100%;
     width: 100%;
     font-family: var(--ffamily);
-    
+
 }
 
 #wrap {
@@ -36,81 +39,72 @@ html, body, #wrap{
 }
 
 /*HEADER*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    background-color: var(--azulUm);
+    background-color: var(--white);
     padding: 1rem;
     
     
 }
 
-header div{
-    display:flex;
+header div {
+    display: flex;
     align-items: center;
 }
 
-header img{
+header img {
     height: 3.5rem;
     width: auto;
     border-radius: 100%;
     padding: 0.1rem;
 }
 
-header img:hover{
-    background-color: var(--azulTres);    
-}
-
-header a{
+header a {
     display: flex;
     text-decoration: none;
     color: var(--black);
 }
 
-header h1{
+#imageUser {
+    margin-left: 1.5rem;
+}
+
+#imageUser:hover {
+    background-color: var(--verde);
+    border-radius: 100%;
+}
+
+
+header h1 {
     margin-top: 1rem;
 }
 
-header span{
+header span {
     font-weight: bold;
 }
+
 /*HEADER*/
 
 /*NAV*/
-nav{
-    background-color: var(--azulDois);
+nav {
+    background-color: var(--azulTres);
+   
 }
 
-
-nav div a{
-    text-decoration: none;
-    padding: 1rem;
-    color: var(--black);
-    margin-top: 1rem;
-
-    
-}
-
-nav span{    
-    font-weight: bold;font-weight: bold;
-}
-
-
-nav i{
-    margin-right: 1rem;
-}
 /*NAV*/
 
 /*MAIN*/
-main{
+main {
     flex-grow: 1;
-    background-color: var(--white) ;
+    background-color: var(--white);
 }
+
 /*MAIN*/
 
 /*FOOTER*/
-footer{
+footer {
     display: flex;
     justify-content: center;
     height: 2.5rem;
@@ -118,3 +112,46 @@ footer{
 }
 
 /*FOOTER*/
+
+/*DROPDOWN*/
+.dropbtn {
+    background-color: var(--azulTres);
+    color: var(--black);
+    padding: 0.6rem;
+    font-weight: 800;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    border-bottom: 3px solid var(--verde);
+    color: var(--verdeDois);
+}
