@@ -26,7 +26,8 @@
             </div>
 
             <div>
-                <!-- <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <!-- OFFCANVAS NO DESKTOP ()> 1020px
+                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                     <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
                </button>
                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
@@ -46,19 +47,18 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-lg navforDesktop">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href=""><i class="fa-brands fa-whatsapp fa-beat-fade fa-2xl" style="color: #00ff80;"></i><span>21 0101-10010</span></a>
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #0d8c66;"></i></a>
                         </li>
 
                         <li class="nav-item">
@@ -68,32 +68,54 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Produtos
+                                Dropdown
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Racao</a></li>
-                                <li><a class="dropdown-item" href="#">Shampoo</a></li>
-                                <li><a class="dropdown-item" href="#">Petiscos</a></li>
-                                <li><a class="dropdown-item" href="#">Remedio</a></li>
-                                <li><a class="dropdown-item" href="#">Roupa</a></li>
-                                <li><a class="dropdown-item" href="#">Coleira</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                        
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                </div> 
+    
+                <!-- OFFCANVAS NO MOBILE
+                <div>
+                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
+                   </button>
+                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                       <div class="offcanvas-header">
+                           <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                           
+                       </div>
+                </div> -->
                 </div>
-
-                <div id="carrinhoBar"></div>
-            </div>
-
-
+                
+            </div> 
+            
+            
         </nav>
 
         <main>
-
+            
+            
         </main>
 
         <footer>
@@ -103,6 +125,7 @@
 </body>
 
 </html>
+
 
 <!-- <nav class="navbar navbar-expand-lg navforDesktop">
             <div class="container-fluid">

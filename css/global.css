@@ -84,31 +84,10 @@ header span{
 
 /*NAV*/
 nav{
-    border-bottom: 2px solid var(--black);
-    border-top: 2px solid var(--black);
     background-color: var(--azulTres);
-    height: 5rem;
 }
 
-#navbarSupportedContent{
-    background-color: var(--azulTres);
-    
-}
 
-.navAdesktop{
-    padding: 1rem;
-    margin-left: 5rem;
-}
-
-nav div a{
-    color: var(--black);
-    text-decoration: none;
-
-}
-
-nav span{    
-    font-weight: 500;
-}
 /*NAV*/
 
 /*MAIN*/
