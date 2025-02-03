@@ -12,7 +12,7 @@
     --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --verde: #d6d84f;
+    --verde: #38A700;
     
     /*font*/
     --ffamily: "Liter", serif;
@@ -99,11 +99,17 @@ nav div a{
     padding: 1rem;
     color: var(--black);
     margin-top: 1rem;
+<<<<<<< Updated upstream
+=======
+    margin-left: 5rem;
+    
+>>>>>>> Stashed changes
 }
 
 /*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
 
 nav span{    
+<<<<<<< Updated upstream
     
     font-weight: bold;font-weight: bold;
 }
@@ -111,6 +117,9 @@ nav span{
 
 nav i{
     margin-right: 1rem;
+=======
+    font-weight: 500;
+>>>>>>> Stashed changes
 }
 /*NAV*/
 
