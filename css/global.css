@@ -12,7 +12,7 @@
     --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --verde: #38A700;
+    --verde: #1b8654;
     
     /*font*/
     --ffamily: "Liter", serif;
@@ -33,6 +33,7 @@ html, body, #wrap{
     flex-direction: column;
     margin: auto;
     width: 100%;
+    background-color: var(--white);
 }
 
 /*HEADER*/
@@ -40,10 +41,8 @@ header{
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    background-color: var(--azulUm);
+    background-color:var(--white);
     padding: 1rem;
-    
-    
 }
 
 header div{
@@ -58,15 +57,21 @@ header img{
     padding: 0.1rem;
 }
 
-header img:hover{
-    background-color: var(--azulTres);    
-}
-
 header a{
     display: flex;
     text-decoration: none;
     color: var(--black);
 }
+
+#imageUser{
+    margin-left: 1.5rem;
+}
+
+#imageUser:hover{
+    background-color: var(--verde); 
+    border-radius: 100%;  
+}
+
 
 header h1{
     margin-top: 1rem;
@@ -79,47 +84,30 @@ header span{
 
 /*NAV*/
 nav{
-    background-color: var(--azulDois);
+    border-bottom: 2px solid var(--black);
+    border-top: 2px solid var(--black);
+    background-color: var(--azulTres);
+    height: 5rem;
 }
-/*DEIXA NO CENTER (PARA NAO MOBILE)*/
-/*
-nav div{
-    display: flex;
-    justify-content: center;
+
+#navbarSupportedContent{
+    background-color: var(--azulTres);
+    
 }
-*/
+
+.navAdesktop{
+    padding: 1rem;
+    margin-left: 5rem;
+}
 
 nav div a{
-    /*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
-    /*
-    display: flex;
-    flex-direction: column;
-    */
-    text-decoration: none;
-    padding: 1rem;
     color: var(--black);
-    margin-top: 1rem;
-<<<<<<< Updated upstream
-=======
-    margin-left: 5rem;
-    
->>>>>>> Stashed changes
-}
+    text-decoration: none;
 
-/*DEIXA OS SPAN EM BAIXO DOS ICONS NO NAV (PARA NAO MOBILE)*/
+}
 
 nav span{    
-<<<<<<< Updated upstream
-    
-    font-weight: bold;font-weight: bold;
-}
-
-
-nav i{
-    margin-right: 1rem;
-=======
     font-weight: 500;
->>>>>>> Stashed changes
 }
 /*NAV*/
 

@@ -26,32 +26,70 @@
             </div>
 
             <div>
-                <a href="perfil.html"><img src="image/user.png" alt=""></a>
-                <span></span>
+                <!-- <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
+               </button>
+               <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                   id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                   <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body">
+                       <p>Try scrolling the rest of the page to see this option in action.</p>
+                   </div>
+               </div> -->
+
+                <div id="carrinhoHeader"></div>
+
+                <a href="" id="imageUser"><img src="image/user.png" alt=""></a>
             </div>
         </header>
 
-
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navforDesktop">
             <div class="container-fluid">
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a href="" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
 
-                        <a href="" title="carrinho"><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <a href="" title="contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=""><i class="fa-brands fa-whatsapp fa-beat-fade fa-2xl" style="color: #00ff80;"></i><span>21 0101-10010</span></a>
+                        </li>
 
-                        <a href="" title="Sobre"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
 
-                    </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Racao</a></li>
+                                <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                                <li><a class="dropdown-item" href="#">Petiscos</a></li>
+                                <li><a class="dropdown-item" href="#">Remedio</a></li>
+                                <li><a class="dropdown-item" href="#">Roupa</a></li>
+                                <li><a class="dropdown-item" href="#">Coleira</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
+
+                <div id="carrinhoBar"></div>
             </div>
+
+
         </nav>
 
         <main>
@@ -63,9 +101,31 @@
         </footer>
     </div>
 </body>
+
 </html>
 
-    <!--
+<!-- <nav class="navbar navbar-expand-lg navforDesktop">
+            <div class="container-fluid">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="" ><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
+
+                        <a href="" ><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
+
+                        <a href="" ><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
+
+                        <a href="" ><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
+
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+<!--
     <header>
         <h1>Bem-vindo ao PetGuard</h1>
         <nav>
