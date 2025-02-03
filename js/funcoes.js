@@ -19,16 +19,16 @@ function _(seletor) {
 }
 
 function template(){ 
-    return ` <header>
+    return /*html*/` <header>
             <div>
                 <!--LOGO TEMPORARIA-->
-                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="">
+                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="Pet Guard logo">
                     <h1>PetGuard</h1>
                 </a>
             </div>
 
             <div>
-                <a href="perfil.html"><img src="image/user.png" alt=""></a>
+                <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>
         </header>
@@ -42,13 +42,13 @@ function template(){
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a href="" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
+                        <a href="#" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
 
-                        <a href="" title="carrinho"><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
+                        <a href="#" title="carrinho"><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
 
-                        <a href="" title="contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
+                        <a href="#" title="contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
 
-                        <a href="" title="Sobre"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
+                        <a href="#" title="Sobre"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
 
                     </div>
                 </div>
@@ -56,6 +56,9 @@ function template(){
         </nav>
 
         <main>
+            <div id="produtos">
+
+            </div>
         </main>
 
         <footer>
