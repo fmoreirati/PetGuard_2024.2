@@ -28,38 +28,154 @@ function template(){
             </div>
 
             <div>
-                <a href="perfil.html"><img src="image/user.png" alt=""></a>
-                <span></span>
+
+
+                <div id="carrinhoHeader">
+                    <!-- Carrinho offcanvas Desktop-->
+
+                    <!-- <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling">
+                        <span class="mx-lg-2"><i class="fa-solid fa-cart-shopping"></i></span>carrinho
+                    </button>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title mx-lg-4" id="offcanvasScrollingLabel">Suas compras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <a href="" id="imageUser"><img src="image/user.png" alt=""></a>
             </div>
         </header>
 
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <div class="container-fluid ">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a href="" class="aNav" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
 
-                        <a href="" class="aNav" title="contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
-                        
-                        <a href="" class="aNav" title="Sobre"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
-                        
-                        <a href="" class="aNav" title="carrinho"><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close border" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Cachorro</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Racao</a>
+                                          <a href="#">Petiscos</a>
+                                          <a href="#">Roupas</a>
+                                        </div>
+                                      </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Gato</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Passaro</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Peixe</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Outros</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <!--Carrinho offcanvas no mobile-->
+                            </li>
+
+
+                        </ul>
 
                     </div>
+
+
                 </div>
             </div>
         </nav>
 
-        <main>
-        </main>
+        <!-- OFFCANVAS NO MOBILE
+                <div>
+                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
+                   </button>
+                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                       <div class="offcanvas-header">
+                           <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                           
+                       </div>
+                </div> -->
+
+
+
+        <main></main>
+
 
         <footer>
             &copy; <span>direitos reservados</span>
-        </footer>
-    </div>`
+        </footer>`
 }
