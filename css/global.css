@@ -7,12 +7,14 @@
 
 :root{
     /*cores*/
-    --azulUm: #05668D;
-    --azulDois: #427AA1;
+    --azulUm: #347FC4;
+    --azulDois: #022F40;
     --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --verde: #1b8654;
+    --verdeUm: #1b8654;
+    --verdeDois: #0E9594;
+    --verdeTres: #127475;
     
     /*font*/
     --ffamily: "Liter", serif;
@@ -65,10 +67,12 @@ header a{
 
 #imageUser{
     margin-left: 1.5rem;
+    border-radius: 100%;
+    transition: 0.3s background-color;
 }
 
 #imageUser:hover{
-    background-color: var(--verde); 
+    background-color: var(--azulTres); 
     border-radius: 100%;  
 }
 
@@ -84,9 +88,23 @@ header span{
 
 /*NAV*/
 nav{
-    background-color: var(--azulTres);
+    height: 80px;
+    margin: 20px;
+    border-radius: 1rem;
+    background-color: var(--azulUm);
+    font-weight: bold;
+    font-size: large ;
 }
 
+.navbar-toggler{
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
 
 /*NAV*/
 
@@ -102,7 +120,9 @@ footer{
     display: flex;
     justify-content: center;
     height: 2.5rem;
-    background-color: var(--azulTres);
+    color: var(--white);
+    font-size: larger;
+    background-color: var(--azulDois);
 }
 
 /*FOOTER*/
