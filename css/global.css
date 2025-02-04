@@ -5,7 +5,7 @@
 /**/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
-:root{
+:root {
     /*cores*/
     --azulUm: #347FC4;
     --azulDois: #022F40;
@@ -18,16 +18,18 @@
     
     /*font*/
     --ffamily: "Liter", serif;
-    --fsize: 
+    
 }
 
 
-html, body, #wrap{
+html,
+body,
+#wrap {
     position: relative;
     height: 100%;
     width: 100%;
     font-family: var(--ffamily);
-    
+
 }
 
 #wrap {
@@ -39,33 +41,33 @@ html, body, #wrap{
 }
 
 /*HEADER*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    background-color:var(--white);
+    background-color: var(--white);
     padding: 1rem;
 }
 
-header div{
-    display:flex;
+header div {
+    display: flex;
     align-items: center;
 }
 
-header img{
+header img {
     height: 3.5rem;
     width: auto;
     border-radius: 100%;
     padding: 0.1rem;
 }
 
-header a{
+header a {
     display: flex;
     text-decoration: none;
     color: var(--black);
 }
 
-#imageUser{
+#imageUser {
     margin-left: 1.5rem;
     border-radius: 100%;
     transition: 0.3s background-color;
@@ -77,13 +79,14 @@ header a{
 }
 
 
-header h1{
+header h1 {
     margin-top: 1rem;
 }
 
-header span{
+header span {
     font-weight: bold;
 }
+
 /*HEADER*/
 
 /*NAV*/
@@ -123,14 +126,15 @@ nav li{
 /*NAV*/
 
 /*MAIN*/
-main{
+main {
     flex-grow: 1;
-    background-color: var(--white) ;
+    background-color: var(--white);
 }
+
 /*MAIN*/
 
 /*FOOTER*/
-footer{
+footer {
     display: flex;
     justify-content: center;
     height: 2.5rem;
