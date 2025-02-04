@@ -18,6 +18,8 @@ function _(seletor) {
    return document.querySelectorAll(seletor);
 }
 
+
+
 function template(){ 
     return ` <header>
             <div>
@@ -28,29 +30,7 @@ function template(){
             </div>
 
             <div>
-
-
-                <div id="carrinhoHeader">
-                    <!-- Carrinho offcanvas Desktop-->
-
-                    <!-- <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                        aria-controls="offcanvasScrolling">
-                        <span class="mx-lg-2"><i class="fa-solid fa-cart-shopping"></i></span>carrinho
-                    </button>
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title mx-lg-4" id="offcanvasScrollingLabel">Suas compras</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                        </div>
-                    </div> -->
-
-                </div>
-
+                <div id="carrinhoHeader"></div>
                 <a href="" id="imageUser"><img src="image/user.png" alt=""></a>
             </div>
         </header>
@@ -138,19 +118,13 @@ function template(){
                                         </div>
                                       </div>
                                 </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <!--Carrinho offcanvas no mobile-->
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
+                            </li>                            
+                        </ul>                      
+                    </div>                    
                 </div>
+            
+                <div id="cartShopNav"> </div>
+
             </div>
         </nav>
 

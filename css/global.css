@@ -5,30 +5,29 @@
 /**/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
-:root {
+:root{
     /*cores*/
-    --azulUm: #05668D;
-    --azulDois: #427AA1;
+    --azulUm: #347FC4;
+    --azulDois: #022F40;
     --azulTres: #0075a2;
     --white: #ebf2fa;
     --black: #071013;
-    --verde: #1b8654;
-    --verdeDois: #103900;
-
+    --verdeUm: #1b8654;
+    --verdeDois: #0E9594;
+    --verdeTres: #127475;
+    
     /*font*/
     --ffamily: "Liter", serif;
-    
+    --fsize: 
 }
 
 
-html,
-body,
-#wrap {
+html, body, #wrap{
     position: relative;
     height: 100%;
     width: 100%;
     font-family: var(--ffamily);
-
+    
 }
 
 #wrap {
@@ -36,122 +35,155 @@ body,
     flex-direction: column;
     margin: auto;
     width: 100%;
+    background-color: var(--white);
 }
 
 /*HEADER*/
-header {
+header{
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    background-color: var(--white);
+    background-color:var(--white);
     padding: 1rem;
-    
-    
 }
 
-header div {
-    display: flex;
+header div{
+    display:flex;
     align-items: center;
 }
 
-header img {
+header img{
     height: 3.5rem;
     width: auto;
     border-radius: 100%;
     padding: 0.1rem;
 }
 
-header a {
+header a{
     display: flex;
     text-decoration: none;
     color: var(--black);
 }
 
-#imageUser {
+#imageUser{
     margin-left: 1.5rem;
-}
-
-#imageUser:hover {
-    background-color: var(--verde);
     border-radius: 100%;
+    transition: 0.3s background-color;
+}
+
+#imageUser:hover{
+    background-color: var(--azulTres); 
+    border-radius: 100%;  
 }
 
 
-header h1 {
+header h1{
     margin-top: 1rem;
 }
 
-header span {
+header span{
     font-weight: bold;
 }
-
 /*HEADER*/
 
 /*NAV*/
-nav {
-    background-color: var(--azulTres);
+nav{
+    height: 80px;
+    margin: 20px;
+    border-radius: 1rem;
+    background-color: var(--azulUm);
+    transition: 0.8s box-shadow 
+}
+
+nav:hover{
+    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
+}
    
+
+nav li{
+    font-weight: bold;
+    font-size: large ;
+}
+
+#offcanvasNavbar{
+    background-color: var(--azulUm);
+    width: 75%;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
 }
 
 /*NAV*/
 
 /*MAIN*/
-main {
+main{
     flex-grow: 1;
-    background-color: var(--white);
+    background-color: var(--white) ;
 }
-
 /*MAIN*/
 
 /*FOOTER*/
-footer {
+footer{
     display: flex;
     justify-content: center;
     height: 2.5rem;
-    background-color: var(--azulTres);
+    color: var(--white);
+    font-size: larger;
+    background-color: var(--azulDois);
 }
 
 /*FOOTER*/
 
-/*DROPDOWN*/
+/* Dropdown Button */
 .dropbtn {
-    background-color: var(--azulTres);
+    background-color: var(--azulUm);
     color: var(--black);
-    padding: 0.6rem;
-    
     border: none;
-}
+    font-weight: bold;
+    font-size: large ;
 
-.dropdown {
+    padding-bottom: 1rem;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.dropdown-content {
+    
+  }
+  
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+    border-radius: 0.8rem;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
+    transition: 0.5s background-color;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #d6d5d5;   }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    border-bottom: 3px solid var(--verde);
-    color: var(--verdeDois);
-}
+  
