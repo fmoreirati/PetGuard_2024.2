@@ -92,8 +92,22 @@ nav{
     margin: 20px;
     border-radius: 1rem;
     background-color: var(--azulUm);
+    transition: 0.8s box-shadow 
+}
+
+nav:hover{
+    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
+}
+   
+
+nav li{
     font-weight: bold;
     font-size: large ;
+}
+
+#offcanvasNavbar{
+    background-color: var(--azulUm);
+    width: 75%;
 }
 
 .navbar-toggler{
@@ -126,3 +140,50 @@ footer{
 }
 
 /*FOOTER*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--azulUm);
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+    font-size: large ;
+
+    padding-bottom: 1rem;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 0.8rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 1s background-color;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #d6d5d5;   }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  
