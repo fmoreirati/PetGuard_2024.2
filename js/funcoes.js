@@ -55,21 +55,21 @@ function template(){
 
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
 
-                            <li class="nav-item">
-                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                            <li class="nav-item ">
+                                
                                     <div class="dropdown">
                                         <button class="dropbtn">Cachorro</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Racao</a>
-                                          <a href="#">Petiscos</a>
-                                          <a href="#">Roupas</a>
+                                            <a href="#">Racao</a>
+                                            <a href="#">Petiscos</a>
+                                            <a href="#">Roupas</a>
                                         </div>
                                       </div>
-                                </a>
+                                
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                
                                     <div class="dropdown">
                                         <button class="dropbtn">Gato</button>
                                         <div class="dropdown-content">
@@ -78,11 +78,11 @@ function template(){
                                           <a href="#">Link 3</a>
                                         </div>
                                       </div>
-                                </a>
+                                
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                
                                     <div class="dropdown">
                                         <button class="dropbtn">Passaro</button>
                                         <div class="dropdown-content">
@@ -91,11 +91,11 @@ function template(){
                                           <a href="#">Link 3</a>
                                         </div>
                                       </div>
-                                </a>
+                                
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                
                                     <div class="dropdown">
                                         <button class="dropbtn">Peixe</button>
                                         <div class="dropdown-content">
@@ -104,11 +104,11 @@ function template(){
                                           <a href="#">Link 3</a>
                                         </div>
                                       </div>
-                                </a>
+                                
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " class="mx-lg-3" aria-current="page" href="#">
+                                
                                     <div class="dropdown">
                                         <button class="dropbtn">Outros</button>
                                         <div class="dropdown-content">
@@ -117,7 +117,7 @@ function template(){
                                           <a href="#">Link 3</a>
                                         </div>
                                       </div>
-                                </a>
+                                
                             </li>                            
                         </ul>                      
                     </div>                    
