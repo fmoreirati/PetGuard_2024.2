@@ -18,6 +18,8 @@ function _(seletor) {
    return document.querySelectorAll(seletor);
 }
 
+
+
 function template(){ 
     return /*html*/` <header>
             <div>
@@ -28,32 +30,143 @@ function template(){
             </div>
 
             <div>
-                <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
+               <div id="carrinhoHeader"></div>
+               <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>
+            
         </header>
 
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <div class="container-fluid ">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a href="#" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
 
-                        <a href="#" title="carrinho"><i class="fa-solid fa-cart-shopping"></i><span>carrinho</span></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
 
-                        <a href="#" title="contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
-
-                        <a href="#" title="Sobre"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
-
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close border" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                            <li class="nav-item ">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Cachorro</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Racao</a>
+                                            <a href="#">Petiscos</a>
+                                            <a href="#">Roupas</a>
+                                        </div>
+                                      </div>
+                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Gato</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Passaro</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Peixe</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Outros pets</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>                                
+                            </li>             
+                            
+                            <li class="nav-item">                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Promoções</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Serviços</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                
+                            </li>
+                        </ul>                      
+                    </div>                    
                 </div>
+            
+                <div id="cartShopNav"> </div>
+
             </div>
-        </nav>
+        </nav
+        <!-- OFFCANVAS NO MOBILE
+                <div>
+                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
+                   </button>
+                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                       <div class="offcanvas-header">
+                           <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                           
+                       </div>
+                </div> -->
 
         <main>
             <div id="produtos">
@@ -61,8 +174,9 @@ function template(){
             </div>
         </main>
 
+
         <footer>
             &copy; <span>direitos reservados</span>
-        </footer>
-    </div>`
+        </footer>`
+
 }

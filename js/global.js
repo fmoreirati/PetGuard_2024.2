@@ -39,13 +39,23 @@ window.onload = () =>{
     //recebe o tamanho da tela do usuario 
     var larguraJanela = window.innerWidth
 
+    function responsiveCartShop() {
+        let largura = window.innerWidth
+        let cartshopNav = document.getElementById('cartShopNav');
+        let cartshopHeader = document.getElementById('carrinhoHeader')
 
-    if (larguraJanela >= 1024) {
-        let navbarA = document.getElementById('navbarNavAltMarkup')
-        navbarA.classList.add('d-flex')
-        navbarA.classList.add('justify-content-center') 
-        
-        
-
+        if (largura < 1024) {
+            cartshopNav.innerHTML = site.cartShop;
+            cartshopHeader.innerHTML = ''
+        } else {
+            cartshopNav.innerHTML = ''; // Limpa o conteúdo quando a largura for maior ou igual a 1024px   
+            cartshopHeader.innerHTML = site.cartShop
+        }   
     }
+
+    // Adiciona um ouvinte de evento para o redimensionamento da janela
+    window.addEventListener('resize', responsiveCartShop);
+
+    responsiveCartShop()
 }
+
