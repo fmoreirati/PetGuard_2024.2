@@ -1,5 +1,5 @@
 const site={
-    cartShop: `<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    cartShop: `<button class="btn cartShop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                         aria-controls="offcanvasScrolling">
                         <span class="mx-lg-2"><i class="fa-solid fa-cart-shopping"></i></span>carrinho
                     </button>
