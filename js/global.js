@@ -50,6 +50,7 @@ window.onload = () =>{
         } else {
             cartshopNav.innerHTML = ''; // Limpa o conteúdo quando a largura for maior ou igual a 1024px   
             cartshopHeader.innerHTML = site.cartShop
+            
         }   
     }
 

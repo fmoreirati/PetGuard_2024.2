@@ -30,8 +30,9 @@ function template(){
             </div>
 
             <div>
-               <div id="carrinhoHeader"></div>
-               <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
+                <div class="favoritos"></div>
+                <div id="carrinhoHeader"></div>
+                <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>
             
@@ -49,8 +50,8 @@ function template(){
                     aria-labelledby="offcanvasNavbarLabel">
 
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close border" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opções</h5>
+                        <button type="button" class="btn-close border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
                     <div class="offcanvas-body">
@@ -149,14 +150,14 @@ function template(){
                 </div>
             
                 <div id="cartShopNav"> </div>
+                
+                
 
             </div>
         </nav
         <!-- OFFCANVAS NO MOBILE
                 <div>
-                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>carrinho
-                   </button>
+                    
                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                        <div class="offcanvas-header">
