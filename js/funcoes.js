@@ -30,8 +30,9 @@ function template(){
             </div>
 
             <div>
-                <div class="favoritos"></div>
-                <div id="carrinhoHeader"></div>
+                
+                
+                <div id="headerItems"><div id="favoritos"></div> <div id="carrinho"></div></div>
                 <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>
@@ -149,8 +150,10 @@ function template(){
                     </div>                    
                 </div>
             
-                <div id="cartShopNav"> </div>
-                
+                <div id="navItems">
+                  <div id="favoritosNav"></div> 
+                  <div id="carrinhoNav"></div>
+                </div>
                 
 
             </div>
