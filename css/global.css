@@ -140,7 +140,8 @@ footer {
     height: 2.5rem;
     color: var(--white);
     font-size: larger;
-    background-color: var(--azulDois);
+    background-color: var(--azulTres);
+    border-top: 2px solid var(--black);
 }
 /*FOOTER*/
 

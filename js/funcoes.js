@@ -33,6 +33,7 @@ function template(){
                 <div id="carrinhoHeader"></div>
                 <a href="" id="imageUser"><img src="image/user.png" alt=""></a>
             </div>
+            
         </header>
 
         <nav class="navbar navbar-expand-lg">
@@ -110,7 +111,30 @@ function template(){
                             <li class="nav-item">
                                 
                                     <div class="dropdown">
-                                        <button class="dropbtn">Outros</button>
+                                        <button class="dropbtn">Outros pets</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>                                
+                            </li>             
+                            
+                            <li class="nav-item">                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Promoções</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>                                
+                            </li>
+
+                            <li class="nav-item">
+                                
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Serviços</button>
                                         <div class="dropdown-content">
                                           <a href="#">Link 1</a>
                                           <a href="#">Link 2</a>
@@ -118,7 +142,7 @@ function template(){
                                         </div>
                                       </div>
                                 
-                            </li>                            
+                            </li>
                         </ul>                      
                     </div>                    
                 </div>
