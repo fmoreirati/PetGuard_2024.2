@@ -21,17 +21,18 @@ function _(seletor) {
 
 
 function template(){ 
-    return ` <header>
+    return /*html*/` <header>
             <div>
                 <!--LOGO TEMPORARIA-->
-                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="">
+                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="Pet Guard logo">
                     <h1>PetGuard</h1>
                 </a>
             </div>
 
             <div>
-                <div id="carrinhoHeader"></div>
-                <a href="" id="imageUser"><img src="image/user.png" alt=""></a>
+               <div id="carrinhoHeader"></div>
+               <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
+                <span></span>
             </div>
             
         </header>
@@ -150,8 +151,7 @@ function template(){
                 <div id="cartShopNav"> </div>
 
             </div>
-        </nav>
-
+        </nav
         <!-- OFFCANVAS NO MOBILE
                 <div>
                     <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
@@ -168,9 +168,11 @@ function template(){
                        </div>
                 </div> -->
 
+        <main>
+            <div id="produtos">
 
-
-        <main></main>
+            </div>
+        </main>
 
 
         <footer>
