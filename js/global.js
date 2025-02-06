@@ -41,24 +41,19 @@ window.onload = () =>{
 
     function responsiveCartShop() {
         let largura = window.innerWidth
-        let navItem = document.getElementById('navItems');
-        let headerItems = document.getElementById('headerItems')
-
-        let favoritos = document.getElementById('favoritos')
-        let carrinho = document.getElementById('carrinho')
-
-        let favoritosNav = document.getElementById('favoritosNav')
-        let carrinhoNav = document.getElementById('carrinhoNav')
 
         if (largura < 1024) {
-            carrinhoNav.innerHTML = site.cartShop;
-            favoritosNav.innerHTML = site.fav;
-            headerItems.innerHTML = ''
+            _('#carrinhoNav').innerHTML = site.cartShop;
+            _('#favoritosNav').innerHTML = site.fav;
+
+            _('#carrinho').innerHTML = ''
+            _('#favoritos').innerHTML = ''
         } else {
-            carrinho.innerHTML = site.cartShop
-            favoritos.innerHTML = site.fav;
-            headerItem.innerHTML = ''; // Limpa o conteúdo quando a largura for maior ou igual a 1024px   
-            
+            _('#carrinho').innerHTML = site.cartShop
+            _('#favoritos').innerHTML = site.fav;
+
+            _('#carrinhoNav').innerHTML = ''; // Limpa o conteúdo quando a largura for maior ou igual a 1024px   
+            _('#favoritosNav').innerHTML = '';
         }   
     }
 
