@@ -147,11 +147,6 @@ footer {
 }
 /*FOOTER*/
 
-.cartShop{
-    animation-duration: 2s;
-    animation-name: animation-cartShop;
-}
-
 /* Dropdown Button */
 /* Estilo do botão do dropdown */
 .dropbtn {
@@ -236,11 +231,3 @@ footer {
 
 /*ANIMATION*/
 
-@keyframes animation-cartShop{
-    from{
-
-    }
-    to{
-        
-    }
-}

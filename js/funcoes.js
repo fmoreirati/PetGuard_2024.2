@@ -19,20 +19,24 @@ function _(seletor) {
 }
 
 
-
+/*HTML(SPA)*/
 function template(){ 
-    return /*html*/` <header>
+    return ` 
+        <header>
+
             <div>
                 <!--LOGO TEMPORARIA-->
-                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="Pet Guard logo">
+                <a href="modelo.html"><img src="${site.imageLogo}" alt="Pet Guard logo">
                     <h1>PetGuard</h1>
                 </a>
             </div>
 
             <div>
                 
+                <div id="favoritosHeader">${site.fav}</div> 
+                <div id="carrinhoHeader">${site.cart}</div>
                 
-                <div id="headerItems"><div id="favoritos"></div> <div id="carrinho"></div></div>
+                
                 <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>

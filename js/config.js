@@ -1,5 +1,13 @@
 const site={
-    cartShop: `<button class="btn cartShop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    /**
+     * Imagem da logo
+     */
+    imageLogo: `image/logoTemporaria.png`,
+
+    /**
+     * Botao offcanvas do carrinho
+     */
+    cart: `<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                         aria-controls="offcanvasScrolling">
                         <span class="mx-lg-2"><i class="fa-solid fa-cart-shopping"></i></span>
                     </button>
@@ -15,7 +23,10 @@ const site={
                         </div>
                     </div> `,
 
-    fav: `<button class="btn cartShop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    /**
+     * Botao offcanvas do favorito
+     */
+    fav: `<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                         aria-controls="offcanvasScrolling">
                         <span class="mx-lg-2"><i class="fa-solid fa-heart"></i></span>
                     </button>
