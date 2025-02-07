@@ -132,6 +132,13 @@ main {
     flex-grow: 1;
     background-color: var(--white);
 }
+
+
+#prod-img{
+    max-width: 12%;
+    padding: auto;
+    padding-bottom: 4rem;
+}
 /*MAIN*/
 
 /*FOOTER*/

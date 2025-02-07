@@ -1,5 +1,6 @@
 window.onload = () =>{
     let out = "";
+    
 
     function listaProdutos(){
         // Fetch the JSON file
@@ -14,9 +15,13 @@ window.onload = () =>{
             // Accessing names and prices
             petFoodData.pet_foods.forEach(food => {
                 //console.log(`Name: ${food.name}, Price: ${food.price}`);
+                products = food;
                 out += /*html*/`
-         <p>Name: ${food.name}, Price: ${food.price}</p>
+                <a id="prod-link" href="./produto.html">
+                    <img id="prod-img" src="./image/food.png" alt="Dog food">
+                </a>       
         `;
+                
             });
 
             _('#produtos').innerHTML = out;    
@@ -26,7 +31,10 @@ window.onload = () =>{
         });
     }
 
-    listaProdutos(); 
+    
+
+    listaProdutos();
+  
     window.addEventListener('resize', responsiveFavCar);
 
 
