@@ -1,0 +1,64 @@
+{
+    "pet_foods": [
+        {
+            "name": "Purina Pro Plan",
+            "price": 49.99
+        },
+        {
+            "name": "Royal Canin",
+            "price": 54.99
+        },
+        {
+            "name": "Hill's Science Diet",
+            "price": 48.99
+        },
+        {
+            "name": "Blue Buffalo",
+            "price": 52.99
+        },
+        {
+            "name": "Wellness Core",
+            "price": 59.99
+        },
+        {
+            "name": "Orijen",
+            "price": 79.99
+        },
+        {
+            "name": "Taste of the Wild",
+            "price": 44.99
+        },
+        {
+            "name": "Merrick Grain-Free",
+            "price": 57.99
+        },
+        {
+            "name": "Canidae",
+            "price": 49.99
+        },
+        {
+            "name": "Nutro Ultra",
+            "price": 50.99
+        },
+        {
+            "name": "Iams ProActive Health",
+            "price": 39.99
+        },
+        {
+            "name": "Acana",
+            "price": 74.99
+        },
+        {
+            "name": "Solid Gold",
+            "price": 45.99
+        },
+        {
+            "name": "Victor Hi-Pro Plus",
+            "price": 39.99
+        },
+        {
+            "name": "Nature's Logic",
+            "price": 55.99
+        }
+    ]
+}

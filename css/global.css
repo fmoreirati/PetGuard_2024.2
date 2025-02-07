@@ -1,0 +1,246 @@
+/*normalize*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+/**/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+/* Definição de variáveis de cores e fontes */
+:root {
+    /*cores*/
+    --azulUm: #347FC4;
+    --azulDois: #022F40;
+    --azulTres: #0075a2;
+    --white: #ebf2fa;
+    --black: #071013;
+    --verdeUm: #1b8654;
+    --verdeDois: #0E9594;
+    --verdeTres: #127475;
+    
+    /*font*/
+    --ffamily: "Liter", serif;
+}
+
+/* Define a posição, altura, largura e fonte dos elementos html, body e #wrap */
+html,
+body,
+#wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: var(--ffamily);
+}
+
+/* Estilo do contêiner principal #wrap */
+#wrap {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    background-color: var(--white);
+}
+
+/*HEADER*/
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+/* Estilo dos elementos div dentro do cabeçalho */
+header div {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo das imagens dentro do cabeçalho */
+header img {
+    height: 3.5rem;
+    width: auto;
+    border-radius: 100%;
+    
+}
+
+/* Estilo dos links dentro do cabeçalho */
+header a {
+    display: flex;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Estilo específico para o link com id #imageUser */
+#imageUser {
+    margin-left: 1.5rem;
+    border-radius: 100%;
+    transition: 0.5s background-color;
+    
+}
+
+/* Estilo hover para o link com id #imageUser */
+#imageUser:hover {
+    background-color: #0074a2bb;
+    border-radius: 100%;  
+}
+
+
+
+/* Estilo dos elementos h1 dentro do cabeçalho */
+header h1 {
+    margin-top: 1rem;
+}
+
+/* Estilo dos elementos span dentro do cabeçalho */
+header span {
+    font-weight: bold;
+}
+/*HEADER*/
+
+/*NAV*/
+/* Estilo da navegação */
+nav {
+    height: 80px;
+    margin: 20px;
+    border-radius: 1rem;
+    background-color: var(--azulUm);
+    transition: 0.8s box-shadow;
+}
+
+/* Estilo hover para a navegação */
+nav:hover {
+    box-shadow: 5px 10px 18px rgba(0,0,0,0.2);
+}
+
+/* Estilo dos itens da lista dentro da navegação */
+nav li {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+
+/*NAV*/
+
+/*MAIN*/
+/* Estilo do elemento main */
+main {
+    flex-grow: 1;
+    background-color: var(--white);
+}
+/*MAIN*/
+
+/*FOOTER*/
+/* Estilo do rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    color: var(--white);
+    font-size: larger;
+    background-color: var(--azulTres);
+    border-top: 2px solid var(--black);
+}
+/*FOOTER*/
+
+.cartShop{
+    animation-duration: 2s;
+    animation-name: animation-cartShop;
+}
+
+/* Dropdown Button */
+/* Estilo do botão do dropdown */
+.dropbtn {
+    background-color: var(--azulUm);
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+/* Estilo do contêiner dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* Estilo do conteúdo do dropdown (oculto por padrão) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 0.8rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation-duration: 3s;
+    animation-name: animation;
+}
+
+/* Links dentro do dropdown */
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s background-color;
+}
+
+/* Mudar a cor dos links do dropdown quando estiverem em hover */
+.dropdown-content a:hover {
+    background-color: #d6d5d5; 
+}
+
+/* Estilo específico para o último link do dropdown em hover */
+.dropdown-content a:last-child:hover {
+    border-bottom-left-radius: 0.8rem; 
+    border-bottom-right-radius: 0.8rem;
+}
+
+/* Estilo específico para o primeiro link do dropdown */
+.dropdown-content a:first-child {
+    border-top-left-radius: 0.8rem; 
+    border-top-right-radius: 0.8rem;
+}
+
+/* Mostrar o conteúdo do dropdown em hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Estilo para o offcanvas da navegação */
+#offcanvasNavbar {
+    background-color: var(--azulUm);
+    width: 75%;
+}
+
+/* Estilo do botão de alternar da navbar */
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* Remover sombras de foco para botão de alternar da navbar e botão de fechamento */
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/*ANIMATION*/
+
+@keyframes animation-cartShop{
+    from{
+
+    }
+    to{
+        
+    }
+}
