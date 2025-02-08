@@ -68,7 +68,7 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Cachorro</button>
                                         <div class="dropdown-content">
-                                            <a href="#">Racao</a>
+                                            <a href="./cachorro.html">Ração</a>
                                             <a href="#">Petiscos</a>
                                             <a href="#">Roupas</a>
                                         </div>

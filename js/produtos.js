@@ -48,9 +48,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Cachorro</button>
                                             <div class="dropdown-content">
-                                                <a href="#">Racao</a>
+                                                <a href="#">Ração</a>
                                                 <a href="#">Petiscos</a>
                                                 <a href="#">Roupas</a>
+                                                <a href="#">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -61,9 +62,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Gato</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                              <a href="#">Ração</a>
+                                              <a href="#">Petiscos</a>
+                                              <a href="#">Roupas</a>
+                                              <a href="#">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -74,9 +76,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Passaro</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                              <a href="#">Ração</a>
+                                              <a href="#">Gaiola</a>
+                                              <a href="#">Recipiente</a>
+                                              <a href="#">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -87,9 +90,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Peixe</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                              <a href="#">Ração</a>
+                                              <a href="#">Aquario</a>
+                                              <a href="#">Filtro</a>
+                                              <a href="#">Decoração</a>
                                             </div>
                                           </div>
                                     
