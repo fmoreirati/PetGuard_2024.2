@@ -131,9 +131,7 @@ main{
 
 /*FOOTER*/
 footer{
-    display: flex;
-    justify-content: center;
-    height: 2.5rem;
+    
     color: var(--white);
     font-size: larger;
     background-color: var(--azulDois);
