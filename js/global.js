@@ -16,7 +16,7 @@ window.onload = () =>{
             petFoodData.pet_foods.forEach(food => {
                 //console.log(`Name: ${food.name}, Price: ${food.price}`);
                 products = food;
-                out += /*html*/`
+                out += `
                 <a id="prod-link" href="./produto.html">
                     <img id="prod-img" src="./image/food.png" alt="Dog food">
                 </a>       

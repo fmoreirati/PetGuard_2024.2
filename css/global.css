@@ -135,9 +135,46 @@ main {
 
 
 #prod-img{
-    max-width: 12%;
+    max-width: 10%;
     padding: auto;
     padding-bottom: 4rem;
+}
+
+#img-id{
+    max-width: 80%;
+    padding: auto;
+}
+
+
+
+/*Aside*/
+#aside-p{
+    width: 200px; /* Fixed width for the aside */
+    height: 800px;
+    max-height: 300px;
+    max-width: 300px;
+    background-color: #f0f0f0; /* Light background for visibility */
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); /* Optional shadow */ 
+    border-radius: 0px 0px 15px 15px;
+}
+
+/*Aside*/
+#item-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+#item-prod{
+    display: flex;
+}
+
+#p-text{
+    text-align: left;
 }
 /*MAIN*/
 

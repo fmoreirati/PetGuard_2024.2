@@ -174,7 +174,8 @@ function template(){
                        <div class="offcanvas-body">
                            
                        </div>
-                </div> -->
+                </div> 
+        
 
         <main>
             <div id="produtos">
