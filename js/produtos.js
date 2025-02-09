@@ -154,7 +154,7 @@ window.onload = () =>{
                            <div class="offcanvas-body">
                                
                            </div>
-                    </div> -->
+                    </div> 
     
             <main>
                 <div id="produtos">
@@ -173,7 +173,27 @@ window.onload = () =>{
 
     let out = "";
     
+    //função para mostrar o produto
+    function mostrarProds(){
+        out += `
 
+        <div id="item-prod">
+           <div id="item-container">
+           <p>Ração Pedigree</p>
+            <img id="img-id" src="./image/food.png"></img>
+            </div>
+           <aside id="aside-p">
+                <p id="p-text">Price: $80.99</p>
+                 <button type="button">Adcionar</button>
+            </aside>
+        </div>
+
+
+
+`;
+
+    _('#produtos').innerHTML = out;
+    }
   
     window.addEventListener('resize', responsiveFavCar);
 
@@ -204,9 +224,10 @@ window.onload = () =>{
     
     // Adiciona um ouvinte de evento para o redimensionamento da janela
     
-    responsiveFavCar()
+    responsiveFavCar();
 
-    _('#wrap').innerHTML = products()
+    _('#wrap').innerHTML = products();
+    mostrarProds();
 }
 
 
