@@ -132,6 +132,13 @@ main {
     flex-grow: 1;
     background-color: var(--white);
 }
+
+#prod-img{
+    max-width: 12%;
+    padding: auto;
+    padding-bottom: 4rem;
+}
+
 /*MAIN*/
 
 /*FOOTER*/
@@ -147,10 +154,10 @@ footer {
 }
 /*FOOTER*/
 
+
 .cartShop{
     animation-duration: 2s;
     animation-name: animation-cartShop;
-}
 
 /* Dropdown Button */
 /* Estilo do botão do dropdown */
@@ -236,6 +243,7 @@ footer {
 
 /*ANIMATION*/
 
+
 @keyframes animation-cartShop{
     from{
 
@@ -244,3 +252,4 @@ footer {
         
     }
 }
+

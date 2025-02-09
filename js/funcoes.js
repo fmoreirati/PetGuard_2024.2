@@ -11,28 +11,37 @@
 *     Selecionar elemento por tag: let el = _('i'); // Retorna todos os elementos <i>
 */
 function _(seletor) {
-   if (seletor.startsWith('#') || seletor.startsWith('.') || seletor.includes(' ')) {
-       const resultado = document.querySelectorAll(seletor);
-       return resultado.length === 1 ? resultado[0] : resultado;
-   }
-   return document.querySelectorAll(seletor);
+  
+  if (seletor.startsWith('#') || seletor.startsWith('.') || seletor.includes(' ')) {
+    const resultado = document.querySelectorAll(seletor);
+    return resultado.length === 1 ? resultado[0] : resultado;
+  }
+  return document.querySelectorAll(seletor);
 }
 
 
+/*HTML(SPA)*/
+function template() {
+  return ` 
+        <header>
 
-function template(){ 
-    return /*html*/` <header>
             <div>
                 <!--LOGO TEMPORARIA-->
-                <a href="modelo.html"><img src="image/logoTemporaria.png" alt="Pet Guard logo">
+                <a href="modelo.html"><img src="${site.imageLogo}" alt="Pet Guard logo">
+
                     <h1>PetGuard</h1>
                 </a>
             </div>
 
             <div>
                 
+
+
+                <div id="favoritosHeader">${site.fav}</div> 
+                <div id="carrinhoHeader">${site.cart}</div>
                 
-                <div id="headerItems"><div id="favoritos"></div> <div id="carrinho"></div></div>
+                
+
                 <a href="perfil.html"><img src="image/user.png" alt="User icon"></a>
                 <span></span>
             </div>
@@ -64,10 +73,13 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Cachorro</button>
                                         <div class="dropdown-content">
-                                            <a href="#">Rações</a>
-                                            <a href="#">Petiscos</a>
-                                            <a href="#">Roupas</a>
-                                            <a href="#">Brinquedos</a>
+
+
+                                                <a href="js/cachorros/racao-cachorro.html">Ração</a>
+                                                <a href="js/cachorros/petiscos-cachorro.html">Petiscos</a>
+                                                <a href="js/cachorros/roupas-cachorro.html">Roupas</a>
+                                                <a href="js/cachorros/brinquedos-cachorro.html">Brinquedos</a>
+
                                         </div>
                                       </div>
                                 
@@ -78,10 +90,13 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Gato</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Rações</a>
-                                          <a href="#">Petiscos</a>
-                                          <a href="#">Roupas</a>
-                                          <a href="#">Brinquedos</a>
+
+
+                                                <a href="js/gatos/racao-gato.html">Ração</a>
+                                                <a href="js/gatos/petiscos-gato.html">Petiscos</a>
+                                                <a href="js/gatos/roupas-gato.html">Roupas</a>
+                                                <a href="js/gatos/brinquedos-gato.html">Brinquedos</a>
+
                                         </div>
                                       </div>
                                 
@@ -90,12 +105,14 @@ function template(){
                             <li class="nav-item">
                                 
                                     <div class="dropdown">
-                                        <button class="dropbtn">Aves</button>
+
+                                        <button class="dropbtn">Passaro</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Rações</a>
-                                          <a href="#">Recipientes</a>
-                                          <a href="#">Gaiolas</a>
-                                          <a href="#">Brinquedos</a>
+                                              <a href="js/passaros/racao-passaro.html">Ração</a>
+                                              <a href="js/passaros/gaiola-passaro.html">Gaiola</a>
+                                              <a href="js/passaros/recipiente-passaro.html">Recipiente</a>
+                                              <a href="js/passaros/brinquedos-passaro.html">Brinquedos</a>
+
                                         </div>
                                       </div>
                                 
@@ -106,10 +123,12 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Peixe</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Rações</a>
-                                          <a href="#">Aquários</a>
-                                          <a href="#">Acessórios</a>
-                                          <a href="#">Filtros</a>
+
+                                              <a href="js/peixes/racao-peixe.html">Ração</a>
+                                              <a href="js/peixes/aquario-peixe.html">Aquario</a>
+                                              <a href="js/peixes/filtro-peixe.html">Filtro</a>
+                                              <a href="js/peixes/decoracao-peixe.html">Decoração</a>
+
                                         </div>
                                       </div>
                                 
@@ -120,9 +139,11 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Outros pets</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Rações</a>
-                                          <a href="#">Acessórios</a>
-                                          <a href="#">Brinquedos</a>
+
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+
                                         </div>
                                       </div>                                
                             </li>             
@@ -143,9 +164,11 @@ function template(){
                                     <div class="dropdown">
                                         <button class="dropbtn">Serviços</button>
                                         <div class="dropdown-content">
-                                          <a href="#">Banho</a>
-                                          <a href="#">Tosa</a>
-                                          <a href="#">Banho e Tosa</a>
+
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+
                                         </div>
                                       </div>
                                 
