@@ -48,9 +48,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Cachorro</button>
                                             <div class="dropdown-content">
-                                                <a href="#">Racao</a>
-                                                <a href="#">Petiscos</a>
-                                                <a href="#">Roupas</a>
+                                                <a href="js/cachorros/racao-cachorro.html">Ração</a>
+                                                <a href="js/cachorros/petiscos-cachorro.html">Petiscos</a>
+                                                <a href="js/cachorros/roupas-cachorro.html">Roupas</a>
+                                                <a href="js/cachorros/brinquedos-cachorro.html">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -61,9 +62,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Gato</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                                <a href="js/gatos/racao-gato.html">Ração</a>
+                                                <a href="js/gatos/petiscos-gato.html">Petiscos</a>
+                                                <a href="js/gatos/roupas-gato.html">Roupas</a>
+                                                <a href="js/gatos/brinquedos-gato.html">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -74,9 +76,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Passaro</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                              <a href="js/passaros/racao-passaro.html">Ração</a>
+                                              <a href="js/passaros/gaiola-passaro.html">Gaiola</a>
+                                              <a href="js/passaros/recipiente-passaro.html">Recipiente</a>
+                                              <a href="js/passaros/brinquedos-passaro.html">Brinquedos</a>
                                             </div>
                                           </div>
                                     
@@ -87,9 +90,10 @@ window.onload = () =>{
                                         <div class="dropdown">
                                             <button class="dropbtn">Peixe</button>
                                             <div class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                              <a href="js/peixes/racao-passaro.html">Ração</a>
+                                              <a href="js/peixes/aquario-passaro.html">Aquario</a>
+                                              <a href="js/peixes/filtro-passaro.html">Filtro</a>
+                                              <a href="js/peixes/decoracao-passaro.html">Decoração</a>
                                             </div>
                                           </div>
                                     
