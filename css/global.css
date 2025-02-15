@@ -123,10 +123,7 @@ nav li{
 /*NAV*/
 
 /*MAIN*/
-main{
-    flex-grow: 1;
-    background-color: var(--white) ;
-}
+
 /*MAIN*/
 
 /*FOOTER*/
@@ -136,7 +133,6 @@ footer{
     font-size: larger;
     background-color: var(--azulDois);
 }
-
 /*FOOTER*/
 
 /* Dropdown Button */
