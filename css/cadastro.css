@@ -1,0 +1,54 @@
+#formCadastro {
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+#formCadastro label {
+    display: block;
+    padding: .25rem .5rem;
+}
+
+#formCadastro input,
+#formCadastro select {
+    width: 100%;
+    background-color: rgb(255, 235, 235);
+    border: 1px solid red;
+    border-radius: .3rem;
+    border-bottom: 3px solid red;
+    padding: .5rem 1rem;
+
+}
+
+#formCadastro textarea {
+    height: 7rem;
+    resize: vertical;
+}
+
+#formCadastro button {
+    background-color: #31a96e;
+    color: #000000;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    pointer-events: none;
+    /*desabilita o clique do botão*/
+}
+
+#formCadastro input:valid,
+#formCadastro select:valid {
+    width: 100%;
+    background-color: rgb(233, 240, 254);
+    border: 1px solid #49bafc;
+    border-bottom: 3px solid #49bafc;
+}
+
+/*botão para formulario valido*/
+#formCadastro:valid button {
+    pointer-events: all;
+    /*habilita o clik do botão*/
+    color: #f0ffff;
+    background-color: #21b835;
+    cursor: pointer;
+}

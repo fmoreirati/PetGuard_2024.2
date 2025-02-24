@@ -1,0 +1,129 @@
+/*Reset do css*/
+* {
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+html,
+body,
+#wrap {
+    font-family: monospace;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* Responsividade= Cria a unidade responsiva 'rem' → 1 rem = 16px*/
+    font-size: 16px;
+}
+
+#wrap {
+    font-family: monospace;
+    position: relative;
+    height: 100%;
+    /* Responsividade= Cria a unidade responsiva 'rem' → 1 rem = 16px*/
+    font-size: 16px;
+}
+
+header {
+    background-color: rgb(128, 255, 227);
+}
+/* h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    padding: 2rem;
+} */
+
+.logo {
+    display: block;
+    float: left;
+    width: 20rem;
+    height: auto;
+    margin-right: .7px;
+}
+
+.andar-1 i {
+    color: aquamarine;
+}
+
+.andar-1 i:hover {
+    color: aqua;
+}
+
+.andar-2 ul a {
+    color: rgb(127, 193, 255);
+    text-decoration: none;
+}
+
+.andar-2 ul a:hover {
+    color: snow;
+}
+
+/*
+ * Estilização do formulário de contato.
+ */
+
+#formContatos {
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+#formContatos label {
+    display: block;
+    padding: .25rem .5rem;
+}
+
+#formContatos input,
+#formContatos textarea {
+    width: 100%;
+    background-color: rgb(255, 235, 235);
+    border: 1px solid red;
+    border-radius: .3rem;
+    border-bottom: 3px solid red;
+    padding: .5rem 1rem;
+
+}
+
+#formContatos textarea {
+    height: 7rem;
+    resize: vertical;
+}
+
+#formContatos button {
+    background-color: #31a96e;
+    color: #000000;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    pointer-events: none;
+    /*desabilita o clique do botão*/
+}
+
+#formContatos input:valid,
+#formContatos textarea:valid {
+    width: 100%;
+    background-color: rgb(233, 240, 254);
+    border: 1px solid #49bafc;
+    border-bottom: 3px solid #49bafc;
+}
+
+/*botão para formulario valido*/
+#formContatos:valid button {
+    pointer-events: all;
+    /*habilita o clik do botão*/
+    color: #f0ffff;
+    background-color: #21b835;
+    cursor: pointer;
+}
+
+/* Escurece o fundo da página com o dialog */
+dialog::backdrop {
+    background: #00000080;
+}
+

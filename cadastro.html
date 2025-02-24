@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  Carrega o CSS da página -->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <!--  Meta tags para SEO -->
     <meta name="author" content="Hugo Azevedo">
     <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
@@ -22,8 +23,9 @@
     <div id="wrap" class="container-fluid d-flex flex-column">
         <header>
             <a href="index.html">
-                <img class="logo" src="/img/logo3.png" alt="logo do site">
+                <img class="logo" src="/img/logo.png" alt="logo do site">
             </a>
+            <h1>PesteGardian</h1>
         </header>
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded-bottom">
@@ -60,11 +62,11 @@
                         </li>
                         <li class="nav-item">
                             <span class="nav-link" href="procurar.html" data-bs-toggle="modal"
-                                data-bs-target="#dialogFormBusca">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <!-- Mostra o SPAM abaixo somente em telas "sm" (small) -->
-                                <span class="d-inline d-sm-none">Procurar</span>
-                            </span>
+                            data-bs-target="#dialogFormBusca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- Mostra o SPAM abaixo somente em telas "sm" (small) -->
+                            <span class="d-inline d-sm-none">Procurar</span>
+                        </span>
                         </li>
                     </ul>
                 </div>
@@ -72,50 +74,72 @@
         </nav>
 
         <main class="container-fluid flex-grow-1">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width: 50%; margin: auto;">
+            <div class="row">
+                <article>
+                    <h2>Faça o cadastro do seu pet</h2>
 
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
+                    <p>Preencha todos os campos para completar o cadastro</p>
 
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/slide.png" alt="Los Angeles" class="d-block" style="width:100%">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/slide2.png" alt="Chicago" class="d-block" style="width:100%">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/slide.png" alt="New York" class="d-block" style="width:100%">
-                    </div>
-                </div>
+                    <form action="completo.html" method="get" id="formCadastro">
 
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+                        <p>
+                            <label for="campoNome">Nome do animal:</label>
+                            <input type="text" name="nome" id="campoNome" placeholder="Digite o nome do pet"
+                                minlength="3" required>
 
-            <div class="row container-fluid">
-                <article class="col-12">
-                    <h2>Article</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus odit in obcaecati
-                    eveniet
-                    minima sint reiciendis! Maxime, iure sequi eum quasi nobis, facere doloribus deserunt mollitia
-                    asperiores
-                    corporis qui?
+                        </p>
+
+                        <p>
+                            <label for="campoEspecie">Espécie:</label>
+                            <input type="text" name="nome" id="campoEspecie" placeholder="Espécie do animal"
+                                minlength="3" required>
+
+                        </p>
+
+                        <p>
+                            <label for="campoData">Data de Nascimento</label>
+                            <input type="date" name="Data" id="campoData" required>
+                        </p>
+
+                        <p>
+                            <label for="campoRaca">Raça do animal:</label>
+                            <input type="text" name="raca" id="campoRaca" placeholder="(se aplicável)" minlength="3">
+                        </p>
+
+                        <p>
+                            <label for="campoEmail">E-mail do Tutor:</label>
+                            <input type="email" name="email" id="campoEmail" placeholder="Digite seu E-mail" required>
+
+                        </p>
+
+                        <p>
+                            <label for="campoSexo">Sexo do animal</label>
+                            <select name="sexo" id="campoSexo" required>
+                                <option value="">Selecione</option>
+                                <option value="macho">Macho</option>
+                                <option value="femea">Femea</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="campoChip">Microchip</label>
+                            <select name="chip" id="campoChip" required>
+                                <option value="">Selecione</option>
+                                <option value="afirmativo">Sim</option>
+                                <option value="negativo">Não</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="campoFoto">Foto do seu animal</label>
+                            <input type="file" name="fotoPet" id="campoFoto">
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <!-- <small>&larr; Clique somente uma vez</small> -->
+                        </p>
                 </article>
-                <!-- <aside class="col-12 col-md-3">
-                    <h2>Aside</h2>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-                </aside> -->
             </div>
         </main>
 
@@ -175,7 +199,7 @@
             </div>
         </footer>
     </div>
-
+    
     <!-- Modal e popup com formulário de busca -->
     <!-- The Modal -->
     <div class="modal fade" id="dialogFormBusca">
