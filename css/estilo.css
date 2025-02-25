@@ -127,3 +127,11 @@ dialog::backdrop {
     background: #00000080;
 }
 
+.card{
+    border: none;
+    padding-right: 10px;
+}
+
+.card:hover{
+    border: 1px solid rgba(73, 78, 80, 0.125)
+}

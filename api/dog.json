@@ -1,0 +1,66 @@
+{
+  "petFoods": [
+    {
+      "petType": "Dog",
+      "brands": [
+        {
+          "name": "Brand A",
+          "flavors": ["Chicken", "Beef", "Lamb"],
+          "type": "Dry Food",
+          "ingredients": ["Chicken Meal", "Rice", "Barley"],
+          "image": "../img/food02.jpg"
+        },
+        {
+          "name": "Brand B",
+          "flavors": ["Fish", "Turkey"],
+          "type": "Wet Food",
+          "ingredients": ["Turkey", "Peas", "Carrots"],
+          "image": "../img/food03.jpg"
+        }
+      ]
+    },
+    {
+      "petType": "Cat",
+      "brands": [
+        {
+          "name": "Brand C",
+          "flavors": ["Tuna", "Salmon"],
+          "type": "Wet Food",
+          "ingredients": ["Tuna", "Salmon", "Chicken Broth"],
+          "image": "../img/food01.png"
+        },
+        {
+          "name": "Brand D",
+          "flavors": ["Chicken", "Beef"],
+          "type": "Dry Food",
+          "ingredients": ["Chicken", "Corn", "Wheat"],
+          "image": "../img/food01.png"
+        }
+      ]
+    },
+    {
+      "petType": "Bird",
+      "brands": [
+        {
+          "name": "Brand E",
+          "flavors": ["Millet Mix"],
+          "type": "Seeds",
+          "ingredients": ["Millet", "Canary Seed", "Hemp Seed"],
+          "image": "../img/food.png"
+        }
+      ]
+    },
+    {
+      "petType": "Fish",
+      "brands": [
+        {
+          "name": "Brand F",
+          "flavors": ["Flake"],
+          "type": "Flake Food",
+          "ingredients": ["Fish Meal", "Spirulina", "Vitamins"],
+          "image": "../img/food.png"
+        }
+      ]
+    }
+  ]
+}
