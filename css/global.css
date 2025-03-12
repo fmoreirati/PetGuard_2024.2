@@ -1,11 +1,12 @@
 /*normalize*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
 /**/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
-:root{
+/* Definição de variáveis de cores e fontes */
+:root {
     /*cores*/
     --azulUm: #347FC4;
     --azulDois: #022F40;
@@ -13,171 +14,249 @@
     --white: #ebf2fa;
     --black: #071013;
     --verdeUm: #1b8654;
-    --verdeDois: #0E9594;
+    --verdeDois: #0e9595;
     --verdeTres: #127475;
     
     /*font*/
     --ffamily: "Liter", serif;
-    --fsize: 
 }
 
-
-html, body, #wrap{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    font-family: var(--ffamily);
-    
+* {
+    box-sizing: border-box;
+    outline: none;
 }
 
+/* Define a posição, altura, largura e fonte dos elementos html, body e #wrap */
+html,
+body,
 #wrap {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: var(--white);
+    height: 100%;
+    font-family: var(--ffamily);
+}
+
+/* Estilo do contêiner principal #wrap */
+#wrap {
+    margin: auto;
 }
 
 /*HEADER*/
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 5rem;
-    background-color:var(--white);
-    padding: 1rem;
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--white);
 }
 
-header div{
-    display:flex;
-    align-items: center;
-}
-
-header img{
-    height: 3.5rem;
-    width: auto;
+/* Estilo das imagens dentro do cabeçalho */
+header img {
+    height: 2rem;
     border-radius: 100%;
-    padding: 0.1rem;
+    
 }
 
-header a{
-    display: flex;
+/* Estilo dos links dentro do cabeçalho */
+header a {
     text-decoration: none;
     color: var(--black);
 }
 
-#imageUser{
-    margin-left: 1.5rem;
-    border-radius: 100%;
-    transition: 0.3s background-color;
-}
-
-#imageUser:hover{
-    background-color: var(--azulTres); 
-    border-radius: 100%;  
-}
-
-
-header h1{
-    margin-top: 1rem;
-}
-
-header span{
+/* Estilo dos elementos span dentro do cabeçalho */
+header span {
     font-weight: bold;
+    font-size: larger;
+    
 }
+
+#searchContainer{
+    border: 2px solid var(--azulTres);
+    padding: .5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 25rem;
+}
+
+#search{
+    background-color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
 /*HEADER*/
 
 /*NAV*/
-nav{
-    height: 80px;
-    margin: 20px;
-    border-radius: 1rem;
-    background-color: var(--azulUm);
-    transition: 0.8s box-shadow 
+/* Estilo da navegação */
+#navTop {
+    height: 80px;   
+    background-color: var(--white);
+    transition: 0.8s box-shadow;
+    border-bottom: 2px solid var(--azulTres);
 }
 
-nav:hover{
-    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
-}
-   
-
-nav li{
-    font-weight: bold;
-    font-size: large ;
+#navTop a{
+    text-decoration: none;
+    color: var(--black);
+    
 }
 
-#offcanvasNavbar{
-    background-color: var(--azulUm);
-    width: 75%;
+#navTop li {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    
 }
 
-.navbar-toggler{
-    border: none;
-    font-size: 1.5rem;
-}
-
-.navbar-toggler:focus, .btn-close:focus{
-    box-shadow: none;
-    outline: none;
+.categoriasNav{
+    font-family: var(--ffamily);
+    font-size: 17px;
 }
 
 /*NAV*/
 
+#carousel{
+    background-color:  var(--azulTres);
+    border-bottom: 2px solid var(--azulTres);
+    
+}
+
+#carousel img{
+    border: 5px solid var(--white);
+    border-radius: 1rem;
+}
+
 /*MAIN*/
+
+
+/* MAIN COM ASIDE PARA AS PAGINAS QUE EXIBEM PRODUTOS*/
+main aside{
+    background-color: #e0e1e271;
+    flex-grow: 2;
+}
+
+main aside div{
+    margin-top: 1rem;
+}
+
+main aside a{
+    padding-left: .9rem;
+} 
 
 /*MAIN*/
 
 /*FOOTER*/
+/* Estilo do rodapé */
 footer{
-    
-    color: var(--white);
-    font-size: larger;
     background-color: var(--azulDois);
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    
+}
+
+footer li{
+    margin-bottom: 1rem;
 }
 /*FOOTER*/
 
 /* Dropdown Button */
+/* Estilo do botão do dropdown */
 .dropbtn {
-    background-color: var(--azulUm);
+    background-color: var(--white);
     color: var(--black);
     border: none;
     font-weight: bold;
-    font-size: large ;
-
+    font-size: large;
     padding-bottom: 1rem;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* Estilo do contêiner dropdown */
+.dropdown {
     position: relative;
     display: inline-block;
-    
-  }
-  
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+    margin-bottom: 1rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* Estilo do conteúdo do dropdown (oculto por padrão) */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    border-radius: 0.8rem;
+    background-color: var(--white);    
+    padding: 1rem;
     min-width: 160px;
-    box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+    animation-duration: 3s;
+    animation-name: animation;
+}
+
+/* Links dentro do dropdown */
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
     color: var(--black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: 1s background-color;
+    
+    
+}
+
+/* Mudar a cor dos links do dropdown quando estiverem em hover */
+.dropdown-content a:hover {
+    background-color: #dfe6ee; 
+    border-radius: 1.2rem;
+    
+}
+
+/* Mostrar o conteúdo do dropdown em hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Estilo para o offcanvas da navegação */
+#offcanvasNavbar {
+    background-color: var(--azulUm);
+    width: 75%;
+}
+
+/* Estilo do botão de alternar da navbar */
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* Remover sombras de foco para botão de alternar da navbar e botão de fechamento */
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/*BUTTON*/
+
+.button_slide {
+    color: var(--black);
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--azulUm);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+
+
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 var(--azulUm);
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #d6d5d5;   }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-
-  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
